@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 style="font-size: xx-large;">
+            計算機
+        </h1>
+        <h2 style="font-size: small;">
+            請輸入第一個數:<input id=a type="text"><br>
+            請輸入第二個數:<input id=b type="text">
+        </h2>
+        <h3>
+            <button onclick="sum()">+</button>
+            <button onclick="minus()">-</button>
+            <button onclick="mutiple()">*</button>
+            <button onclick="divide()">/</button>
+        </h3>
+        <h4>
+            答案:<output id="c">
+            </output>
+        </h3>
+        <script>
+            function sum(){
+            var a=parseInt(document.getElementById('a').value);
+            var b=parseInt(document.getElementById('b').value);
+            document.getElementById('c').value=a+b
+
+        }
+        function minus(ma,mb){
+            var a=parseInt(document.getElementById('a').value);
+            var b=parseInt(document.getElementById('b').value);
+            document.getElementById('c').value=a-b
+        }
+        function mutiple(mua,mub){
+            var a=parseInt(document.getElementById('a').value);
+            var b=parseInt(document.getElementById('b').value);
+            document.getElementById('c').value=a*b
+        }
+        function divide(da,db){
+            var a=parseInt(document.getElementById('a').value);
+            var b=parseInt(document.getElementById('b').value);
+            document.getElementById('c').value=a/b
+        }
+        </script>
+    </body>
+</html>
